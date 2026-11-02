@@ -13,7 +13,6 @@ dependencies = [
     "langgraph>=1.2.19",
     "langgraph-checkpoint-sqlite>=3.1.3",
     "pandas>=3.1.0",
-    "pypdf>=6.21.4",
     "python-dotenv>=1.2.4",
     "streamlit>=1.66.1",
 ]
@@ -29,3 +28,8 @@ build-backend = "uv_build"
 dev = [
     "pytest>=9.2.0",
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# third-party noise (langsmith uses an API deprecated in Python 3.14)
+filterwarnings = ["ignore::DeprecationWarning:langsmith.*"]

@@ -1,0 +1,13 @@
+# Secrets — never commit (this repo will become public)
+.env
+
+# Python / tooling
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Runtime state (conversation checkpoints)
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm

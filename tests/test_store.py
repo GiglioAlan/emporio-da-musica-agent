@@ -81,6 +81,11 @@ def test_p1_active_promotions(store):
     assert store.product_card(90)["promo_price_brl"] == round(2399 * 0.82, 2)
 
 
+def test_p1_p2_list_what_is_really_on_sale(store):
+    result = store.search_products(on_promotion=True)
+    assert {p["product_id"] for p in result["products"]} == {90, 94, 121, 127}
+
+
 def test_p2_p3_inactive_promotions_ignored(store):
     for pid in (93, 96, 99, 102, 113):  # only inactive rows (Black Friday, Semana do Músico...)
         assert "promo_percent" not in store.product_card(pid)

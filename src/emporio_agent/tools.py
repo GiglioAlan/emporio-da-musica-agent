@@ -28,9 +28,10 @@ def search_products(
     min_price: float | None = None,
     max_price: float | None = None,
     include_unavailable: bool = False,
+    on_promotion: bool = False,
 ) -> str:
     """Search the store catalog. Use it for open questions such as "which acoustic guitars under R$ 1000?",
-    "do you have electric ukuleles?" or "what do you have from Yamaha?".
+    "do you have electric ukuleles?", "what do you have from Yamaha?" or "what's on sale?".
 
     Args:
         query: free-text keywords matched against name, category and description (e.g. "yamaha", "nylon", "elétrico").
@@ -39,11 +40,15 @@ def search_products(
         min_price: minimum price in BRL (compared with the price the customer pays, promotions included).
         max_price: maximum price in BRL (same rule).
         include_unavailable: also return out-of-stock, discontinued and coming-soon items. Default False.
+        on_promotion: only items with an ACTIVE promotion — use it when the customer asks about promotions,
+            discounts or a specific campaign (e.g. Black Friday), to show what is really on sale now.
 
     Returns the cheapest matches first, with price, active promotion and availability.
     """
     return _json(
-        get_store().search_products(query, category, min_price, max_price, only_available=not include_unavailable)
+        get_store().search_products(
+            query, category, min_price, max_price, only_available=not include_unavailable, on_promotion=on_promotion
+        )
     )
 
 

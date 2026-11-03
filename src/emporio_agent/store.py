@@ -134,6 +134,7 @@ class Store:
         min_price: float | None = None,
         max_price: float | None = None,
         only_available: bool = True,
+        on_promotion: bool = False,
         limit: int = 10,
     ) -> dict:
         """Filter the catalog. Prices are compared against the final (promotional) price the customer pays."""
@@ -153,6 +154,8 @@ class Store:
             df = df[df["final_price"] <= max_price]
         if only_available:
             df = df[df["availability"] == AVAILABLE]
+        if on_promotion:
+            df = df[df["promo_percent"] > 0]
         df = df.sort_values("final_price")
         return {"total": len(df), "products": [self.product_card(pid) for pid in df.index[:limit]]}
 

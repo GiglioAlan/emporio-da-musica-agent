@@ -7,7 +7,8 @@ __pycache__/
 *.pyc
 .pytest_cache/
 
-# Runtime state (conversation checkpoints)
+# Runtime state (conversation checkpoints, support tickets)
+var/
 *.sqlite
 *.sqlite-wal
 *.sqlite-shm

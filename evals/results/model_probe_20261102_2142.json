@@ -1,0 +1,76 @@
+[
+  {
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "question": "Quanto custa o Takamine GD20?",
+    "answer": "O Takamine GD20 Dreadnought Natural custa R$ 2.199,00 e está disponível em estoque (5 unidades). 🎸\n\nQuer saber as condições de pagamento (PIX, cartão, boleto) ou precisa de mais detalhes sobre ele?",
+    "tools": [
+      "get_product_details"
+    ],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": false,
+    "tool_errors": 0,
+    "seconds": 3.1
+  },
+  {
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "question": "Oi! Queria saber do meu pedido 8, meu e-mail é anacarol.ferreira@coldmail.com",
+    "answer": "Oi, Ana! Tudo bem?\n\nOlhei aqui o seu pedido 8 (ukulele Kala KA-C Concert Mogno, pago no débito). Infelizmente ele está com a entrega atrasada: o prazo estimado era 28/02/2026 e ainda não chegou.\n\nO código de rastreamento é **BRJL5544332BR**. Você pode acompanhar pelo site dos Correios ou da Jadlog.\n\nPeço desculpas pelo transtorno. Posso abrir um chamado (reclamação) para a nossa equipe verificar o que aconteceu com a entrega — eles respondem em até 24 horas úteis. Você quer que eu faça isso?",
+    "tools": [
+      "get_order_status"
+    ],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": false,
+    "tool_errors": 0,
+    "seconds": 2.8
+  },
+  {
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "question": "Vocês vendem cordas de guitarra?",
+    "answer": "Não, infelizmente não vendemos cordas de guitarra. 🎸\n\nA Empório da Música trabalha exclusivamente com instrumentos musicais — guitarras, baixos, violões, baterias, teclados, ukuleles e similares. Acessórios como cordas, palhetas, cabos, cases, pedais e amplificadores não fazem parte do nosso catálogo.\n\nSe você estiver procurando algum instrumento, é só me dizer que eu te ajudo a encontrar!",
+    "tools": [],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": false,
+    "tool_errors": 0,
+    "seconds": 1.4
+  },
+  {
+    "model": "groq:openai/gpt-oss-120b",
+    "question": "Quanto custa o Takamine GD20?",
+    "answer": "O Takamine GD20 Dreadnought Natural está disponível por R$ 2.199,00. 😊\n\nLembrando que aceitamos PIX (5 % de desconto), débito, boleto e cartão de crédito em até 12x sem juros (parcelas mínimas de R$ 100). Se quiser saber o valor exato nas condições que prefere, é só me dizer!",
+    "tools": [
+      "get_product_details"
+    ],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": false,
+    "tool_errors": 0,
+    "seconds": 18.6
+  },
+  {
+    "model": "groq:openai/gpt-oss-120b",
+    "question": "Oi! Queria saber do meu pedido 8, meu e-mail é anacarol.ferreira@coldmail.com",
+    "answer": "Oi, Ana! Tudo bem?\n\nSeu pedido #8 já foi enviado e o código de rastreamento é **BRJL5544332BR**. Peço desculpas pelo atraso – a entrega estimada era para 28/02/2026 e ainda não chegou.\n\nComo já se passaram mais de 90 dias desde a data prevista, a garantia legal acabou. Mas podemos abrir um ticket de reclamação para que a equipe verifique o que aconteceu e encontre a melhor solução para você.\n\nDeseja que eu registre a reclamação? Se preferir, pode falar direto com a gente pelo WhatsApp (67) 3341‑4444 ou e‑mail contato@empóriodamusica.com.br. Estou à disposição! 😊",
+    "tools": [
+      "get_order_status"
+    ],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": false,
+    "tool_errors": 0,
+    "seconds": 72.1
+  },
+  {
+    "model": "groq:openai/gpt-oss-120b",
+    "question": "Vocês vendem cordas de guitarra?",
+    "answer": "Não, a Empório da Música trabalha só com instrumentos musicais. Para cordas e outros acessórios, recomendo procurar uma loja especializada ou um parceiro de confiança. Posso ajudar a encontrar a guitarra ideal para você! 🎸",
+    "tools": [],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": false,
+    "tool_errors": 0,
+    "seconds": 34.9
+  }
+]

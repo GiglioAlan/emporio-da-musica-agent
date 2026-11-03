@@ -105,6 +105,11 @@ class Store:
     def category_names(self) -> list[str]:
         return self.categories["name"].tolist()
 
+    def categories_for_sale(self) -> list[str]:
+        """Categories with at least one available product — what the store can actually sell right now."""
+        on_sale = self.products[self.products["availability"] == AVAILABLE]["category"]
+        return [c for c in self.category_names() if c in set(on_sale)]
+
     def product_card(self, product_id: int, with_details: bool = False) -> dict:
         p = self.products.loc[product_id]
         card = {

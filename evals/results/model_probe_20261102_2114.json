@@ -1,0 +1,152 @@
+[
+  {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "question": "Quanto custa o Takamine GD20?",
+    "answer": "O Takamine GD20 Dreadnought Natural está disponível por **R$ 2.199,00**.\n\n**Condições de pagamento:**\n- **PIX:** R$ 2.089,05 (5% de desconto à vista)\n- **Débito ou boleto:** R$ 2.199,00\n- **Cartão de crédito:** até 12x sem juros de R$ 183,25 (parcela mínima de R$ 100 nas 7x a 12x)\n\nTemos 5 unidades em estoque. É um violão dreadnought com tampo sólido em cedro, ótimo para fingerstyle — timbre quente e bem definido.\n\nQuer que eu reserve um ou prefere ver outras opções de violão nessa faixa?",
+    "tools": [
+      "get_product_details",
+      "get_payment_options"
+    ],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": false,
+    "tool_errors": 0,
+    "seconds": 9.7
+  },
+  {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "question": "Oi! Queria saber do meu pedido 8, meu e-mail é anacarol.ferreira@coldmail.com",
+    "answer": "Oi, Ana! 😊\n\nOlhei seu pedido **#8** (feito em 15/02/2026) e ele consta como **enviado** com previsão de entrega para **28/02/2026**. Pelo que vejo, a entrega está bem atrasada — peço desculpas pelo transtorno.\n\n**Código de rastreamento:** `BRJL5544332BR`  \nVocê pode acompanhar no site dos Correios ou da Jadlog (o formato padrão é BR + 9 caracteres + BR).\n\nJá vou registrar a ocorrência pra nossa equipe dar uma checada com a transportadora. O prazo de retorno pra reclamações é de **24 horas úteis** — a gente te avisa assim que tiver novidades.\n\nSe quiser, posso te passar o contato direto do nosso time (WhatsApp/telefone **(67) 3341-4444** ou e-mail **contato@emporiodamusica.com.br**) pra você acompanhar também por lá.\n\nPrecisa de mais alguma coisa enquanto a gente resolve?",
+    "tools": [
+      "get_order_status"
+    ],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": false,
+    "tool_errors": 0,
+    "seconds": 10.6
+  },
+  {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "question": "Vocês vendem cordas de guitarra?",
+    "answer": "Não, a gente trabalha **só com instrumentos musicais** — guitarras, violões, baixos, baterias, teclados, ukuleles, instrumentos de sopro e cordas orquestrais. Acessórios como cordas, palhetas, cabos, cases, pedais e amplificadores a gente não vende.\n\nSe você estiver procurando um instrumento novo, posso te mostrar o que temos em estoque. Qual tipo você tem em mente? 🎸",
+    "tools": [],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": false,
+    "tool_errors": 0,
+    "seconds": 4.6
+  },
+  {
+    "model": "dots-studio/dots-3-note-preview:free",
+    "question": "Quanto custa o Takamine GD20?",
+    "answer": "\n\nO violão Takamine GD20 Dreadnought Natural está disponível por **R$ 2.199,00**.\n\nÉ um violão com tampo sólido em cedro, costas e laterais em sapele, mogno no braço e cordas steel — excelente para fingerstyle com timbre quente e definido.\n\nQuer ver as opções de pagamento? Temos PIX com 5% de desconto (fica por R$ 2.089,05) e parcelamento em até 12x no cartão de crédito. Posso calcular as condições para você!",
+    "tools": [
+      "get_product_details"
+    ],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": false,
+    "tool_errors": 0,
+    "seconds": 6.3
+  },
+  {
+    "model": "dots-studio/dots-3-note-preview:free",
+    "question": "Oi! Queria saber do meu pedido 8, meu e-mail é anacarol.ferreira@coldmail.com",
+    "answer": "\n\nOi, Ana! Tudo bem? Vou te contar o status do seu pedido:\n\n📦 **Pediu 8** — **Enviado** (em trânsito)\n🎸 **Item:** Kala KA-C Concert Mogno (1 unidade)\n📅 **Data do pedido:** 15/02/2026\n🚚 **Código de rastreamento:** BRJL5544332BR\n⏰ **Previsão de entrega:** 28/02/2026\n\nPreciso te pedir desculpas, Ana — a previsão de entrega já passou há bons meses e o pedido ainda está em trânsito. Isso não é normal e nossa equipe já está investigando o ocorrido.\n\nVocê pode seguir o rastreamento pelo site dos Correios com o código **BRJL5544332BR**. Nossa equipe vai dar um bom跟进 nisso e você deve receber um retorno em até 24 horas úteis.\n\nSe quiser que eu acione uma reclamação formal ou precisar de mais alguma coisa, é só me avisar! 😊",
+    "tools": [
+      "get_order_status"
+    ],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": true,
+    "tool_errors": 0,
+    "seconds": 9.2
+  },
+  {
+    "model": "dots-studio/dots-3-note-preview:free",
+    "question": "Vocês vendem cordas de guitarra?",
+    "answer": "\n\nOlá! Infelizmente a Empório da Música trabalha exclusivamente com **instrumentos musicais**. Não comercializamos acessórios como cordas, palhetas, cabos, cases, pedais ou amplificadores.\n\nPara cordas e outros acessórios, sugiro procurar lojas especializadas em instrumentos musicais da sua região — elas costumam ter um bom variedade. Se quiser, posso te ajudar com alguma dúvida sobre algum instrumento do nosso catálogo!",
+    "tools": [],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": false,
+    "tool_errors": 0,
+    "seconds": 5.8
+  },
+  {
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "question": "Quanto custa o Takamine GD20?",
+    "answer": "O Takamine GD20 Dreadnought Natural custa R$ 2.199,00. 🎸\n\nÀ vista no PIX sai por R$ 2.089,05 (5% de desconto). No cartão de crédito, pode parcelar em até 12x sem juros, de R$ 183,25.\n\nTemos 5 unidades em estoque. Quer fechar a compra ou precisa de mais alguma informação?",
+    "tools": [
+      "get_product_details",
+      "get_payment_options"
+    ],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": false,
+    "tool_errors": 0,
+    "seconds": 3.4
+  },
+  {
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "question": "Oi! Queria saber do meu pedido 8, meu e-mail é anacarol.ferreira@coldmail.com",
+    "answer": "Oi, Ana! Tudo bem?\n\nOlhei aqui o seu pedido 8 (ukulele Kala KA-C Concert Mogno, pago no débito). Ele está com status **enviado**, mas a previsão de entrega já passou. O código de rastreamento é **BRJL5544332BR**.\n\nPeço desculpas pela demora. Nossa equipe vai acompanhar a situação com a transportadora e dar um retorno para você em até 24 horas úteis.\n\nPrecisa de mais alguma coisa? 🎸",
+    "tools": [
+      "get_order_status"
+    ],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": false,
+    "tool_errors": 0,
+    "seconds": 2.5
+  },
+  {
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "question": "Vocês vendem cordas de guitarra?",
+    "answer": "Não, não vendemos cordas nem outros acessórios (palhetas, cabos, cases, pedais ou amplificadores). Trabalhamos exclusivamente com instrumentos musicais.\n\nSe quiser, posso te mostrar guitarras, violões, baixos ou qualquer outro instrumento que tenha em estoque. Em que posso ajudar? 🎸",
+    "tools": [],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": false,
+    "tool_errors": 0,
+    "seconds": 1.6
+  },
+  {
+    "model": "nvidia/nemotron-3.5-lightning:free",
+    "question": "Quanto custa o Takamine GD20?",
+    "answer": "O Takamine GD20 custa **R$ 2.199,00** e está disponível em estoque (5 unidades). É um violão dreadnought com tampo sólido em cedro, ótimo para fingerstyle, com timbre quente e definido.",
+    "tools": [
+      "get_product_details"
+    ],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": false,
+    "tool_errors": 0,
+    "seconds": 2.6
+  },
+  {
+    "model": "nvidia/nemotron-3.5-lightning:free",
+    "question": "Oi! Queria saber do meu pedido 8, meu e-mail é anacarol.ferreira@coldmail.com",
+    "answer": "Oi, Ana! Tudo bem?\n\nConsultei o seu pedido #8 e encontrei as seguintes informações:\n\n- **Status:** Enviado\n- **Produto:** Kala KA-C Concert Mogno\n- **Valor total:** R$ 349,90 (pagamento via débito)\n- **Código de rastreamento:** BRJL5544332BR\n- **Data estimada de entrega:** 28/02/2026\n\nInfelizmente, o prazo de entrega passou há bastante tempo (247 dias de atraso). Peço desculpas por esse inconveniente.\n\n**O que fazer agora:**\n1. Você pode usar o código de rastreamento **BRJL5544332BR** para acompanhar o status diretamente no site dos Correios ou da Jadlog.\n2. Como o pedido está atrasado, nossa equipe vai entrar em contato para resolver isso o mais rápido possível. O prazo de resposta para reclamações é de até 24 horas úteis.\n\nPrecisa de alguma outra ajuda? Estou à disposição!",
+    "tools": [
+      "get_order_status"
+    ],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": false,
+    "tool_errors": 0,
+    "seconds": 10.1
+  },
+  {
+    "model": "nvidia/nemotron-3.5-lightning:free",
+    "question": "Vocês vendem cordas de guitarra?",
+    "answer": "Não, a Empório da Música trabalha exclusivamente com instrumentos musicais. Não comercializamos acessórios como cordas, palhetas, cabos, cases, pedais ou amplificadores.\n\nMas podemos ajudar você a encontrar guitarras ou outros instrumentos. Em que mais posso ajudar?",
+    "tools": [],
+    "tool_ok": true,
+    "content_ok": true,
+    "cjk": false,
+    "tool_errors": 0,
+    "seconds": 2.3
+  }
+]

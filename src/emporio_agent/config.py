@@ -13,7 +13,7 @@ load_dotenv(ROOT / ".env")
 RAW_DATA_DIR = ROOT / "data" / "raw"
 POLICIES_PATH = ROOT / "data" / "processed" / "policies.md"
 
-ASSISTANT_NAME = os.environ.get("ASSISTANT_NAME", "Lia")
+ASSISTANT_NAME = os.environ.get("ASSISTANT_NAME", "Clave")
 
 # Free models chosen with evals/model_probe.py (see README). The fallback chain ends on another provider (Groq),
 # so an OpenRouter/NVIDIA outage doesn't take the agent down. "groq:" prefix = Groq's OpenAI-compatible API.

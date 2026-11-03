@@ -273,6 +273,9 @@ Each transcript shows the tools called on every turn.
 - **Free-tier models**: latency varies a lot with provider load (2–40 s per answer measured), and availability
   isn't guaranteed. The Groq fallback is slow and less accurate (it misapplied the warranty rule in the probe).
 - **Two providers, one model family**: primary and first fallback are both NVIDIA models on OpenRouter.
+- **No circuit breaker**: fallback was tested by pointing `MODEL` at a nonexistent model — the first fallback
+  answered correctly, but every model call in the turn tried the broken primary first (one wasted request per
+  call). A breaker that skips a failing model for a few minutes would fix it.
 - **Non-determinism**: eval results are from a small number of runs; a different day/provider load can change them.
 - **Fuzzy name search** is token/substring based ("kala" also matches "Kalani"); fine for 64 products, not for a
   large catalog.
